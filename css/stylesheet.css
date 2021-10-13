@@ -1,0 +1,107 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(39, 140, 199);
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: rgb(240, 196, 52);
+    height: 60px;
+    padding-left: 80px;
+}
+
+.main-home {
+    width: 100%;
+    height: 100%;
+    background-color: #3c9ff0;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.banner {
+    padding-top: 20px;
+}
+
+.banner-content {
+    width: 100%;
+}
+
+.banner-justify {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content h1 {}
+
+.banner-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    -webkit-text-fill-color: rgb(235, 229, 229);
+    /* Will override color (regardless of order) */
+    margin: 0px;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.updown {
+    animation: MoveUpDown 1s linear infinite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.sections {
+    float: inline-start;
+}
+
+.card {
+    float: left;
+    display: block;
+    margin: 60px;
+    border-color: rgba(63, 74, 233, 0.904);
+    border-width: 15px;
+    border-radius: 10px;
+}
+
+.timeline {
+    float: none;
+}
