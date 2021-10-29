@@ -7,8 +7,6 @@
     <meta content="" name="description" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +17,7 @@
 
 </head>
 
-<body data-spy="scroll">
+<body data-spy="scroll" data-target="#navbar-example2">
 
     <!-- Loading Screen -->
     <div class="preloader">
@@ -30,7 +28,7 @@
     <!--Navbar-->
     <div class="header ">
         <div class="navbar_container">
-            <nav class="navbar navbar-expand-md navbar-light">
+            <nav class="navbar navbar-expand-md navbar-light" id="navbar-example2">
                 <!-- Brand -->
                 <div class="navbar-logo">
                     <h1 id="navbar-logo">HIMAKOM POLBAN</h1>
@@ -70,44 +68,69 @@
         </div>
     </section>
 
-    <div class="container">
-        <!-- The diagonal area -->
-        <div class="container__diagonal">
-            <h1 class="layer1">TIME TO VOTE!</h1>
+    <section class="kandidat" id="Kandidat">
+        <!-- Kandidat -->
+        <div class="container-card">
+            <div class="row">
+                <div class="col-md-6">
+                    <!--Kandidat 1-->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Foto kandidat -->
+                            <div class="flip-card-front">
+                                <img src="https://i.pinimg.com/originals/32/6f/7c/326f7cd6429cf76c88bd4d61c20ac716.jpg" alt="avatar" style="width:250px; height:250px;" srcset="">
+                            </div>
+
+                            <!-- Visi Misi kandidat -->
+                            <div class="flip-card-back">
+                                <p>Uzumaki Naruto bin Namikaze Minato</p>
+                                <p>Visi</p>
+                                <p>Menciptakan konoha yang kuat, sejahtera, adil dan makmur</p>
+                                <p>Misi</p>
+                                <ul>
+                                    <li class="list">Meningkatkan kualitas anbu</li>
+                                    <li class="list">Mencipatakan kurikulum baru untuk akademi ninja</li>
+                                    <li class="list">Membangun satgas badan anti korupsi desa</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!--Kandidat 2-->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Foto kandidat -->
+                            <div class="flip-card-front">
+                                <img src="https://i.pinimg.com/originals/32/6f/7c/326f7cd6429cf76c88bd4d61c20ac716.jpg " alt="avatar" style="width:250px; height:250px;" srcset=" ">
+                            </div>
+
+                            <!-- Visi Misi kandidat -->
+                            <div class="flip-card-back">
+                                <p>Nama Kandidat</p>
+                                <p>Visi</p>
+                                <p>blablabalablaba</p>
+                                <p>Misi</p>
+                                <p>blablabalablaba</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h1 class="fademein">TIME TO VOTE!</h1>
-    </div>
 
-
-    <section class="form">
-        <form class="left" id="">
-            <label for="text">Nama Lengkap</label><br>
-            <input type="text"><br>
-            <label for="prodi">Program Studi</label><br>
-            <select id="prodi" name="prodi">
-                <option value="D3">D3 Teknik Informatika</option>
-                <option value="D4">D4 Teknik Informatika</option>
-            </select><br>
-            <label for="Email">Email POLBAN</label><br>
-            <input type="email" id="email" name="email"><br>
-        </form>
-
-        <form class="right">
-            <label for="NIM">NIM</label><br>
-            <input type="text" id="NIM" name="NIM"><br>
-            <label for="angkatan">Angkatan</label><br>
-            <select id="angkatan" name="angkatan">
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-            </select><br>
-            <label for="password">Password Email</label><br>
-            <input type="password" id="password"><br>
-        </form>
     </section>
 
 
+    <section class="alur" id="Alur">
+
+
+    </section>
+
+
+
+
+    </div>
     <footer>
         <div>Himpunan Mahasiswa Teknik Komputer Politeknik Negeri Bandung</div>
         <div>2021</div>

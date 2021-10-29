@@ -1,0 +1,257 @@
+:root {
+    --darkblue: #000040ff;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+body {
+    position: relative;
+    font-family: 'Urbanist', sans-serif;
+    background: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.preloader {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.complete {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    background: rgb(255, 255, 255);
+    z-index: 999;
+}
+
+.nav-item {
+    padding-left: 15px;
+}
+
+.nav-item .nav-link {
+    color: var(--darkblue) !important;
+    transition: 0.5s;
+    font-weight: medium;
+    font-size: 25px;
+}
+
+.nav-item .active {
+    position: relative;
+    color: #0000ff !important;
+    transition: 0.5s;
+}
+
+.nav-btn {
+    background-color: #000040ff;
+    padding: 5px 15px;
+    border-radius: 30px;
+    border: solid 1px var(--darkblue);
+    font-style: italic;
+    font-weight: 900;
+    color: whitesmoke;
+    display: flex;
+    align-self: center;
+}
+
+.navbar-logo h1 {
+    font-size: 31.8px;
+    font-weight: 900;
+}
+
+
+/*.navbar-brand {
+max-width: 150px;
+}
+
+.navbar-brand img {
+width: 100%;
+}*/
+
+.main-home {
+    width: 100%;
+    height: 100%;
+    background-color: #000040ff;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    margin-bottom: 300px;
+}
+
+.banner {
+    padding-top: 20px;
+}
+
+.banner-content {
+    width: 100%;
+    -webkit-text-fill-color: rgb(235, 229, 229);
+}
+
+.banner-justify {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    /* Will override color (regardless of order) */
+    margin-top: 150px;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.updown {
+    animation: MoveUpDown 1s linear infinite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.vote h1 {
+    z-index: 4;
+    color: #000040ff;
+    text-align: center;
+    display: none;
+}
+
+.container {
+    /* Used to position the diagonal area */
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 300px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.container__diagonal {
+    /* Absolute position */
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    /* Take full size */
+    width: 100%;
+    height: 100px;
+    /* Create diagonal sides */
+    transform: skewY(+10deg);
+    /* Background color */
+    background-color: #000040ff;
+    /* Displayed under the main content */
+    z-index: 2;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: block;
+}
+
+.fademein {
+    color: #000040ff;
+    z-index: 1;
+    font-size: 100px;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+}
+
+.container__diagonal .layer1 {
+    color: white;
+    z-index: 2;
+    transform: skewY(-10deg);
+    font-size: 100px;
+    font-weight: bold;
+    font-style: italic;
+    overflow: hidden;
+}
+
+.card {
+    width: 70%;
+    padding: 30px 90px 90px 90px;
+    border: 6px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    position: relative;
+}
+
+.form {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+}
+
+.left {
+    margin-right: 25%;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input {
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 25px;
+}
+
+select {
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 25px;
+}
+
+footer {
+    background-color: #000040ff;
+    font-size: 25px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
